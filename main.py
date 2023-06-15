@@ -54,15 +54,13 @@ class Posts(db.Model):
 def home():
     posts = Posts.query.filter_by().all()
     last = math.ceil(len(posts)/int(params['no_of_posts']))
-    #[0: params['no_of_posts']]
-    #posts = posts[]
+    
     page = request.args.get('page')
     if(not str(page).isnumeric()):
         page = 1
     page= int(page)
     posts = posts[(page-1)*int(params['no_of_posts']): (page-1)*int(params['no_of_posts'])+ int(params['no_of_posts'])]
-    #Pagination Logic
-    #First
+    
     if (page==1):
         prev = "#"
         next = "/?page="+ str(page+1)
@@ -100,7 +98,6 @@ def dashboard():
         username = request.form.get('uname')
         userpass = request.form.get('pass')
         if (username == params['admin_user'] and userpass == params['admin_password']):
-            #set the session variable
             session['user'] = username
             posts = Posts.query.all()
             return render_template('dashboard.html', params=params, posts = posts)
