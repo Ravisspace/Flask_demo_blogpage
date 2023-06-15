@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+{% block body %}
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/about-bg.jpg') }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>About Me</h1>
+              <span class="subheading">This is what I do.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>Welcome to my blog! I'm Ravi, and I am thrilled to share my knowledge and insights about artificial intelligence (AI), website development, and the world of blogging.
+
+            With a deep understanding of AI, I have immersed myself in various subfields such as natural language processing, computer vision, and machine learning. I have hands-on experience in developing AI models, designing intelligent algorithms, and applying AI techniques to solve real-world problems. Through my blog posts, I aim to demystify complex AI concepts, discuss the latest advancements, and explore practical applications that have the potential to transform industries and our daily lives.
+            
+            Website development is another area I'm passionate about. I have honed my skills in HTML, CSS, JavaScript, and various frameworks like React and Angular. I have successfully built responsive and user-friendly websites and web applications, leveraging my expertise to create seamless digital experiences. Through my blog, I share web development tips, best practices, and tutorials, empowering others to create impressive online platforms.
+            
+            Beyond AI and website development, I am also an avid blogger. I have been crafting engaging and informative content on various topics, ranging from technology and AI ethics to personal growth and productivity. Blogging allows me to share my thoughts, experiences, and valuable insights with a wider audience. I believe in the power of words to inspire, educate, and connect people, and I'm excited to engage with readers through meaningful discussions.
+            
+            Through this blog, my goal is to provide valuable information, practical guidance, and thought-provoking content. Whether you are an AI enthusiast, a web developer, or someone simply interested in exploring new ideas, I invite you to join me on this exciting journey. Together, we can navigate the ever-evolving world of AI, delve into the intricacies of web development, and explore the endless possibilities of the blogosphere.
+            
+            Thank you for visiting my blog, and I look forward to connecting with you as we embark on this enriching intellectual adventure.
+            </p>
+        </div>
+      </div>
+    </div>
+
+   {% endblock %}
